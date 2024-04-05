@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2";
+}
+.calculator{
+    min-width: 50%;
+}
+
+@media (max-width:950px) {
+    .calculator{
+        min-width: 60%;
+    } 
+    .content-table {
+        min-width: 60%;
+    }
+} 
+@media (max-width:650px) {
+    .calculator{
+        min-width: 90%;
+    } 
+    .content-table {
+        min-width: 90%;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #318CE7;
+    color: #fff;
+    padding: 10px;
+}
+.input-box {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+
+.input-box input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.input-box button {
+    background: #3F00FF;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.input-box button:hover{
+    background-color: #002fa7;
+}
+
+/* Table Style */
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    min-width: 50%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    color: black;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th{
+    text-align: center;
+}
+
+.content-table th,
+.content-table td {
+    padding: 14px 18px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}

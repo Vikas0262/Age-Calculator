@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Age Calculator</h1>
+        <div class="calculator">
+            <div class="input-box">
+                <input type="date" id="date">
+                <button onclick="calculateAge()">Calculate</button>
+            </div>
+        </div>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th colspan="2" id="age">YOUR AGE: 35 YEARS, 10 MONTHS AND 4 DAYS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Age In Months</td>
+                    <td id="age-month"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Age In Weeks</td>
+                    <td id="week-result"></td>
+                </tr>
+                <tr>
+                    <td>Age In Days</td>
+                    <td id="day-result"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Age In Hours</td>
+                    <td id="hour-result"></td>
+                </tr>
+                <tr>
+                    <td>Age In Minutes</td>
+                    <td id="minute-result"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Age In Seconds</td>
+                    <td id="second-result"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
